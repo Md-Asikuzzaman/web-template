@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tfm Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/tfm/tfm-font2.css" />
+    <link rel="stylesheet" href="assets/tfm/agent-info.css" />
+    <link rel="stylesheet" href="assets/tfm/downloads.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/tfm/tfm-style.css" />
+  </head>
+
+  <body>
+    <!-- tfm header -->
+    <div class="hero-section">
+      <div class="container">
+        <div class="nav-container">
+          <nav>
+            <div class="logo">
+              <img src="assets/img/logo.png" />
+            </div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li id="reseller"><a>Resellers</a></li>
+              <li id="download"><a>Download</a></li>
+            </ul>
+            <div class="nav-login">
+              <a
+                style="cursor: pointer"
+                class="login"
+                data-toggle="modal"
+                data-target="#login"
+                >Login</a
+              >
+              <a
+                data-toggle="modal"
+                data-target="#signup"
+                href=""
+                class="SignUp"
+                >Sign Up</a
+              >
+
+              <div class="modal fade" id="signup" role="dialog">
+                <!-- Modal content-->
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header d-block">
+                      <h4 class="modal-title">Sign in</h4>
+                    </div>
+                    <div class="modal-footer d-block">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputUser">Username</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputUser"
+                            aria-describedby="userHelp"
+                            placeholder="Username"
+                          />
+                        </div>
+
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Email address"
+                          />
+                        </div>
+                        <div class="form-group" id="form-group2">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            placeholder="Password"
+                          />
+                          <div class="eye">
+                            <i
+                              class="fa fa-eye"
+                              aria-hidden="true"
+                              id="eye"
+                              onclick="toggle()"
+                            ></i>
+                          </div>
+                          <div
+                            class="check-section d-flex justify-content-between"
+                          >
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Rememeber me</label
+                            >
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <a href="">Forgotten password</a>
+                          </div>
+                        </div>
+                        <div class="sign-btn">
+                          <a href="" class="btn" id="messege">Sign in</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="login" role="dialog">
+                <!-- Modal content-->
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header d-block">
+                      <h4 class="modal-title">Sign in</h4>
+                    </div>
+                    <div class="modal-footer d-block">
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Username</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Username"
+                          />
+                        </div>
+                        <div class="form-group" id="form-group2">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password"
+                            placeholder="Password"
+                          />
+                          <div class="eye">
+                            <i
+                              class="fa fa-eye"
+                              aria-hidden="true"
+                              id="eye"
+                              onclick="toggle()"
+                            ></i>
+                          </div>
+                          <div
+                            class="check-section d-flex justify-content-between"
+                          >
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Rememeber me</label
+                            >
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <a href="">Forgotten password</a>
+                          </div>
+                        </div>
+                        <div class="sign-btn">
+                          <a href="" class="btn" id="messege">Sign in</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="hero__heading">
+        <h1>UNLOCK YOUR SAMSUNG</h1>
+      </div>
+    </div>
+    <!-- tfm end header -->
+
+    <!-- reseller section start -->
+
+    <section class="reseller__section">
+      <span class="reseller__close"
+        ><i class="fa-regular fa-circle-xmark"></i
+      ></span>
+
+      <div class="about-card-section">
+        <div class="container">
+          <div class="content">
+            <div class="body">
+              <div class="distributors">
+                <div class="distributor-details">
+                  <div class="distributor">
+                    <div class="details">
+                      <div class="names">
+                        <h3>Distributor name here</h3>
+                        <span>Designation</span>
+                      </div>
+                      <div class="country">
+                        <p>South Africa</p>
+                      </div>
+                      <div class="info ps-3 pe-1 pb-2">
+                        <p class="name">
+                          <span class="props"> Contact Person: </span>
+                          <span class="values"> GSM NURUL </span>
+                        </p>
+
+                        <p class="mail">
+                          <span class="props"> Email: </span>
+                          <span class="values"> admin@gsmafrica. </span>
+                        </p>
+                        <p class="phone">
+                          <span class="props"> Phone: </span>
+                          <span class="values"> +27659713366 </span>
+                        </p>
+                        <p class="web">
+                          <span class="props"> Web: </span>
+                          <span class="values"> www.gsmafrica.com </span>
+                        </p>
+                        <p class="skype">
+                          <span class="props"> Skype: </span>
+                          <span class="values"> gsmafrica.com </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="names">
+                        <h3>Distributor name here</h3>
+                        <span>Designation</span>
+                      </div>
+                      <div class="country">
+                        <p>South Africa</p>
+                      </div>
+                      <div class="info ps-3 pe-1 pb-2">
+                        <p class="name">
+                          <span class="props"> Contact Person: </span>
+                          <span class="values"> GSM NURUL </span>
+                        </p>
+
+                        <p class="mail">
+                          <span class="props"> Email: </span>
+                          <span class="values"> admin@gsmafrica. </span>
+                        </p>
+                        <p class="phone">
+                          <span class="props"> Phone: </span>
+                          <span class="values"> +27659713366 </span>
+                        </p>
+                        <p class="web">
+                          <span class="props"> Web: </span>
+                          <span class="values"> www.gsmafrica.com </span>
+                        </p>
+                        <p class="skype">
+                          <span class="props"> Skype: </span>
+                          <span class="values"> gsmafrica.com </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="names">
+                        <h3>Distributor name here</h3>
+                        <span>Designation</span>
+                      </div>
+                      <div class="country">
+                        <p>South Africa</p>
+                      </div>
+                      <div class="info ps-3 pe-1 pb-2">
+                        <p class="name">
+                          <span class="props"> Contact Person: </span>
+                          <span class="values"> GSM NURUL </span>
+                        </p>
+
+                        <p class="mail">
+                          <span class="props"> Email: </span>
+                          <span class="values"> admin@gsmafrica. </span>
+                        </p>
+                        <p class="phone">
+                          <span class="props"> Phone: </span>
+                          <span class="values"> +27659713366 </span>
+                        </p>
+                        <p class="web">
+                          <span class="props"> Web: </span>
+                          <span class="values"> www.gsmafrica.com </span>
+                        </p>
+                        <p class="skype">
+                          <span class="props"> Skype: </span>
+                          <span class="values"> gsmafrica.com </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="names">
+                        <h3>Distributor name here</h3>
+                        <span>Designation</span>
+                      </div>
+                      <div class="country">
+                        <p>South Africa</p>
+                      </div>
+                      <div class="info ps-3 pe-1 pb-2">
+                        <p class="name">
+                          <span class="props"> Contact Person: </span>
+                          <span class="values"> GSM NURUL </span>
+                        </p>
+
+                        <p class="mail">
+                          <span class="props"> Email: </span>
+                          <span class="values"> admin@gsmafrica. </span>
+                        </p>
+                        <p class="phone">
+                          <span class="props"> Phone: </span>
+                          <span class="values"> +27659713366 </span>
+                        </p>
+                        <p class="web">
+                          <span class="props"> Web: </span>
+                          <span class="values"> www.gsmafrica.com </span>
+                        </p>
+                        <p class="skype">
+                          <span class="props"> Skype: </span>
+                          <span class="values"> gsmafrica.com </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="names">
+                        <h3>Distributor name here</h3>
+                        <span>Designation</span>
+                      </div>
+                      <div class="country">
+                        <p>South Africa</p>
+                      </div>
+                      <div class="info ps-3 pe-1 pb-2">
+                        <p class="name">
+                          <span class="props"> Contact Person: </span>
+                          <span class="values"> GSM NURUL </span>
+                        </p>
+
+                        <p class="mail">
+                          <span class="props"> Email: </span>
+                          <span class="values"> admin@gsmafrica. </span>
+                        </p>
+                        <p class="phone">
+                          <span class="props"> Phone: </span>
+                          <span class="values"> +27659713366 </span>
+                        </p>
+                        <p class="web">
+                          <span class="props"> Web: </span>
+                          <span class="values"> www.gsmafrica.com </span>
+                        </p>
+                        <p class="skype">
+                          <span class="props"> Skype: </span>
+                          <span class="values"> gsmafrica.com </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="names">
+                        <h3>Distributor name here</h3>
+                        <span>Designation</span>
+                      </div>
+                      <div class="country">
+                        <p>South Africa</p>
+                      </div>
+                      <div class="info ps-3 pe-1 pb-2">
+                        <p class="name">
+                          <span class="props"> Contact Person: </span>
+                          <span class="values"> GSM NURUL </span>
+                        </p>
+
+                        <p class="mail">
+                          <span class="props"> Email: </span>
+                          <span class="values"> admin@gsmafrica. </span>
+                        </p>
+                        <p class="phone">
+                          <span class="props"> Phone: </span>
+                          <span class="values"> +27659713366 </span>
+                        </p>
+                        <p class="web">
+                          <span class="props"> Web: </span>
+                          <span class="values"> www.gsmafrica.com </span>
+                        </p>
+                        <p class="skype">
+                          <span class="props"> Skype: </span>
+                          <span class="values"> gsmafrica.com </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="names">
+                        <h3>Distributor name here</h3>
+                        <span>Designation</span>
+                      </div>
+                      <div class="country">
+                        <p>South Africa</p>
+                      </div>
+                      <div class="info ps-3 pe-1 pb-2">
+                        <p class="name">
+                          <span class="props"> Contact Person: </span>
+                          <span class="values"> GSM NURUL </span>
+                        </p>
+
+                        <p class="mail">
+                          <span class="props"> Email: </span>
+                          <span class="values"> admin@gsmafrica. </span>
+                        </p>
+                        <p class="phone">
+                          <span class="props"> Phone: </span>
+                          <span class="values"> +27659713366 </span>
+                        </p>
+                        <p class="web">
+                          <span class="props"> Web: </span>
+                          <span class="values"> www.gsmafrica.com </span>
+                        </p>
+                        <p class="skype">
+                          <span class="props"> Skype: </span>
+                          <span class="values"> gsmafrica.com </span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <div class="names">
+                        <h3>Distributor name here</h3>
+                        <span>Designation</span>
+                      </div>
+                      <div class="country">
+                        <p>South Africa</p>
+                      </div>
+                      <div class="info ps-3 pe-1 pb-2">
+                        <p class="name mb-0">
+                          <span class="props"> Contact Person: </span>
+                          <span class="values"> GSM NURUL </span>
+                        </p>
+
+                        <p class="mail mb-0">
+                          <span class="props"> Email: </span>
+                          <span class="values"> admin@gsmafrica. </span>
+                        </p>
+                        <p class="phone">
+                          <span class="props"> Phone: </span>
+                          <span class="values"> +27659713366 </span>
+                        </p>
+                        <p class="web">
+                          <span class="props"> Web: </span>
+                          <span class="values"> www.gsmafrica.com </span>
+                        </p>
+                        <p class="skype">
+                          <span class="props"> Skype: </span>
+                          <span class="values"> gsmafrica.com </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reseller">
+                  <div class="resseler-text px-5">
+                    <br />
+                    <h3
+                      class="d-flex justify-content-center align-items-center"
+                    >
+                      Want to become <br />
+                      a reseller?
+                    </h3>
+                    <p class="my-5">
+                      Reprehenderit est poserersimus voluptatem dolorem facilis
+                      aspernatur, reiciendis rerum Doloribus, dicta quibusda
+                      quaerat expedita rem!
+                    </p>
+                    <a
+                      href="#"
+                      class="d-flex justify-content-center align-items-center"
+                      >Become a reseller</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reseller section end -->
+
+    <!-- download section start -->
+
+    <section class="download__section">
+      <span class="download__close"
+        ><i class="fa-regular fa-circle-xmark"></i
+      ></span>
+      <div class="main-content">
+        <div class="container mb-5">
+          <div class="rows download-row">
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card-contents">
+              <div class="card-link">
+                <a href="download.html">
+                  <div
+                    class="card-body d-flex justify-content-center align-items-center flex-column"
+                  >
+                    <img src="assets/img/dicon.png" />
+                    <h1 class="card-title">MTK Module</h1>
+                    <button
+                      class="btn btn-default d-flex align-items-center justify-content-center"
+                    >
+                      Download
+                      <img
+                        class="download-arrow"
+                        src="assets/svg/download-arrow.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- download section end -->
+
+    <!--tfm-footer-->
+    <div class="tfm-footer bg-white">
+      <div class="container">
+        <div class="col-lg-13">
+          <div class="footer-rows">
+            <div class="mb-4 f-col logo">
+              <img src="assets/img/logo.png" />
+              <p class="italic">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
+                recusandae voluptatibus soluta eligendi ea. Tempora dolorum
+                repellendus adipisci laborum non.
+              </p>
+            </div>
+            <div class="mb-4 f-col contact">
+              <h6>Contact</h6>
+              <ul class="px-0">
+                <li class="d-flex align-items-center mb-3 mt-0">
+                  <i class="fas fa-map-marker-alt mr-2"></i>
+                  <a
+                    href="https://goo.gl/maps/uDZf1gBB5NdYZ7on7"
+                    class="my-0 ms-3"
+                    target="_blank"
+                    >32/1, Road: 03, Shyamoli, Dhaka-1207, Bangladesh.</a
+                  >
+                </li>
+                <li class="d-flex align-items-center my-3">
+                  <i class="fas fa-phone mr-2"></i>
+                  <a href="tel:+8801303094897" class="my-0 ms-3"
+                    >+(880) 1303-094897</a
+                  >
+                </li>
+                <li class="d-flex align-items-cente my-3">
+                  <i class="fas fa-paper-plane mt-2 mr-2"></i>
+                  <a href="mailto:contact@tfmtool.com" class="my-0 ms-3"
+                    >contact@tfmtool.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="last-line">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="mb-0" style="color: #fff">
+            © 2020 <a href="#">TFM Tool Pro</a>, <br />All rights reserved.
+          </p>
+          <img class="paypal" src="assets/svg/paypal.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--tfm-footer-->
+
+    <!-- script file -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js';
+    </script>
+    <script>
+      var state = false;
+      function toggle() {
+        if (state) {
+          document.getElementById('password').setAttribute('type', 'password');
+          document.getElementById('eye').style.color = '#7a797e';
+          state = false;
+        } else {
+          document.getElementById('password').setAttribute('type', 'text');
+          document.getElementById('eye').style.color = '#5887ef';
+          state = true;
+        }
+      }
+    </script>
+    <script src="/assets/js/carousel.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!-- Work process end -->
