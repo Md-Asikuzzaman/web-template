@@ -467,7 +467,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #fff;
+  color: #222e35;
   letter-spacing: 0.1em;
   display: block;
   border: 1px solid transparent;
@@ -480,7 +480,7 @@ body {
 }
 
 .about-distributor-section .body .dashboard .left label svg path {
-  fill: #fff;
+  fill: #222e35;
 }
 
 .about-distributor-section
@@ -497,7 +497,7 @@ body {
 .about-distributor-section .body .dashboard .left label[for='home'] svg path {
   fill: transparent;
   stroke-width: 50px;
-  stroke: #fff;
+  stroke: #222e35;
 }
 
 .about-distributor-section
