@@ -162,7 +162,7 @@ body {
 }
 
 .modal-title {
-  width: 101px;
+  width: 100%;
   height: 36px;
   left: 0px;
   top: 0px;
@@ -173,6 +173,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   color: #4c4c4c;
+  text-align: center;
 }
 
 .modal-footer {
@@ -261,7 +262,7 @@ p .last-texts {
 
 .eye {
   position: absolute;
-  right: 26px;
+  right: 36px;
   margin-top: -38px;
   cursor: pointer;
 }
@@ -500,7 +501,7 @@ input {
 
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url('./../cover/hero-cover.jpg');
+    url('./../img/hero-cover.jpg');
   background-repeat: no-repeat;
   min-height: 90vh;
   background-size: cover;

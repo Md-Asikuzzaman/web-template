@@ -20,9 +20,17 @@ body {
   position: relative;
 }
 
+.modal-dialog {
+  width: 500px !important;
+}
+
 /* hero section */
-.hero-section {
-  background-color: #4c1d95;
+.hero__wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url('./../img/admin-cover.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Nav Section */
@@ -380,11 +388,15 @@ body {
 
 /* about-distributor-section */
 .about-distributor-section {
-  background-color: white;
+  background-color: #d1d7db;
 }
 
 .about-distributor-section .content {
   position: relative;
+}
+
+.about-distributor-section .body {
+  padding: 5rem 0;
 }
 
 .about-distributor-section .header {
@@ -422,10 +434,6 @@ body {
   color: #4b5563;
 }
 
-.about-distributor-section .body {
-  padding: 5px 0 40px;
-}
-
 .about-distributor-section .body-content {
   /* margin: 5px 0 40px; */
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
@@ -440,18 +448,14 @@ body {
 }
 
 .about-distributor-section .body .dashboard .left {
-  background-color: #4c1d95;
+  background-color: #b9c2c8;
   display: table-cell;
   width: 30%;
 }
 
 .about-distributor-section .body .dashboard .left input:checked + label {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 208, 0, 1) 0%,
-    rgba(255, 213, 26, 1) 100%
-  );
-  color: #111827;
+  background: #222e35;
+  color: #fff;
 }
 
 .about-distributor-section .body .dashboard .left input {
@@ -487,7 +491,7 @@ body {
   + label
   svg
   path {
-  fill: #111827;
+  fill: #fff;
 }
 
 .about-distributor-section .body .dashboard .left label[for='home'] svg path {
@@ -506,7 +510,7 @@ body {
   path {
   fill: transparent;
   stroke-width: 50px;
-  stroke: #111827;
+  stroke: #fff;
 }
 
 .about-distributor-section .body .dashboard .right {
@@ -623,7 +627,7 @@ body {
 
 .about-distributor-section .body-dash .job .search nav li a.active {
   color: #fff;
-  background: #7c3aed;
+  background: #222e35;
   border-radius: 3px;
 }
 
@@ -688,6 +692,8 @@ body {
 
 .about-distributor-section .body-dash .profile .confirm-button button {
   width: 100%;
+  background-color: #222e35;
+  color: #fff;
 }
 
 @media screen and (max-width: 1023px) {
@@ -890,6 +896,34 @@ body {
   font-family: Mulish;
   font-size: 17px;
   color: #f5f3ff;
+}
+
+/* tools options */
+.tools__box {
+  min-height: 350px;
+}
+.tools__options {
+  border: 2px solid #222e35;
+  padding: 10px;
+  position: relative;
+}
+
+.tools__options span {
+  position: absolute;
+  background-color: #fff;
+  top: -20px;
+  left: 5px;
+  padding: 5px;
+}
+
+.tools__options button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  margin-top: 10px;
+  background-color: #222e35;
+  color: #fff;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 767px) {
