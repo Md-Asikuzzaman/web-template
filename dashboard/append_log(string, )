@@ -1,0 +1,10 @@
+append_log(string, )
+
+default
+info, 
+success,
+failed,
+
+append_log("Your name ", success){
+
+}

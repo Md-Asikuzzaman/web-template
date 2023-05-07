@@ -512,7 +512,7 @@
                           <div class="col-lg-6 col-md-12">
                             <div class="tools__options">
                               <span>Operations: </span>
-                              <button>
+                              <button onclick="readInfo()">
                                 <i class="fa-regular fa-circle-question"></i>
                                 Read Information
                               </button>
@@ -525,20 +525,8 @@
                           <!-- tools information will be go here... -->
                           <div class="col-lg-6 col-md-12">
                             <div class="tools__info">
-                              <p class="mb-0">Exp Name: SAM FRP TOOL</p>
-                              <p class="mb-0">Exp Version: V1.0.0</p>
-                              <p class="mb-0">Action: Reset FRP</p>
-                              <p class="mb-0">Waiting for MTP Device...</p>
-                              <p class="mb-0 text-danger">
-                                The Operation Was Canceled By The User...
-                              </p>
-                              <div class="mt-4">
-                                <p class="mb-0">Operations Finished!</p>
-                                <p class="mb-0">
-                                  <b>Total Time:</b> [00:min:00:sec]
-                                </p>
-                                <p class="mb-0">Operation/Work ID: 433</p>
-                              </div>
+                             
+
                             </div>
                           </div>
                           <!-- tools information will be go here... -->
@@ -675,8 +663,10 @@
     <!--tfm-footer-->
     <script src="./../assets/js/jquery-3.6.0.min.js" defer></script>
     <script src="./../assets/js/bootstrap.min.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
+    <script src="./assets/js/logger.js"></script>
     <script src="/assets/js/app.js" type="text/javascript"></script>
   </body>
 </html>
