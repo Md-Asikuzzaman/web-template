@@ -13,10 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
+
     <script
       src="https://kit.fontawesome.com/60527c8c39.js"
       crossorigin="anonymous"
@@ -25,7 +22,7 @@
   </head>
 
   <body>
-    <!-- herosection -->
+    <!-- hero section -->
     <section class="hero-section hero__wrapper">
       <div class="container">
         <div class="nav-container">
@@ -61,7 +58,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header d-block">
-                    <h4 class="modal-title">Sign in</h4>
+                    <h4 class="modal-title w-100 text-center my-3">Sign up</h4>
                   </div>
                   <div class="modal-footer d-block">
                     <form>
@@ -91,7 +88,7 @@
                         <input
                           type="password"
                           class="form-control"
-                          id="password"
+                          id="exampleInputPassword1"
                           placeholder="Password"
                         />
                         <div
@@ -109,7 +106,7 @@
                         </div>
                       </div>
                       <div class="sign-btn">
-                        <a href="" class="btn" id="messege">Sign in</a>
+                        <a href="" class="btn" id="messege">Sign up</a>
                       </div>
                     </form>
                   </div>
@@ -122,26 +119,26 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header d-block">
-                    <h4 class="modal-title">Sign in</h4>
+                    <h4 class="modal-title w-100 text-center my-3">Sign in</h4>
                   </div>
                   <div class="modal-footer d-block">
                     <form>
                       <div class="form-group">
-                        <label for="exampleInputEmail1">Username</label>
+                        <label for="exampleInputUsername">Username</label>
                         <input
-                          type="email"
+                          type="text"
                           class="form-control"
-                          id="exampleInputEmail1"
-                          aria-describedby="emailHelp"
+                          id="exampleInputUsername"
+                          aria-describedby="userHelp"
                           placeholder="Username"
                         />
                       </div>
                       <div class="form-group" id="form-group2">
-                        <label for="exampleInputPassword1">Password</label>
+                        <label for="password1">Password</label>
                         <input
                           type="password"
                           class="form-control"
-                          id="password"
+                          id="password1"
                           placeholder="Password"
                         />
                         <div
@@ -175,16 +172,8 @@
         </div>
         <div class="content-container"></div>
       </div>
-      <div class="content-footer">
-        <img
-          class="tfm-footer-svg"
-          src="../assets/svg/jumbotron-footer.svg"
-          alt=""
-        />
-      </div>
     </section>
-
-    <!-- herosection -->
+    <!-- hero section -->
 
     <!-- about-distributor-section -->
     <section class="about-distributor-section">
@@ -193,7 +182,9 @@
           <div class="body">
             <div class="body-content">
               <div class="dashboard">
+                <!-- dashboard left start -->
                 <div class="left">
+                  <!-- home dashboard option -->
                   <input
                     type="radio"
                     id="home"
@@ -202,6 +193,7 @@
                     checked
                   />
                   <label for="home"><i class="fas fa-home"></i> Home</label>
+                  <!-- home job history option -->
                   <input
                     type="radio"
                     id="job-history"
@@ -211,15 +203,17 @@
                   <label for="job-history"
                     ><i class="fas fa-history"></i> JOB History</label
                   >
+                  <!-- home samfrp tools option -->
                   <input
                     type="radio"
-                    id="device-fingerprint"
+                    id="samfrp-tools"
                     name="Dashboard"
-                    value="Device Fingerprint"
+                    value="samfrp-tools"
                   />
-                  <label for="device-fingerprint"
+                  <label for="samfrp-tools"
                     ><i class="fas fa-tools"></i> SAMFRP TOOL</label
                   >
+                  <!-- home user profile option -->
                   <input
                     type="radio"
                     id="user-profile"
@@ -230,6 +224,9 @@
                     ><i class="fas fa-user"></i> User Profile</label
                   >
                 </div>
+                <!-- dashboard left end -->
+
+                <!-- dashboard right start -->
                 <div class="right">
                   <div class="content">
                     <div class="head-dash">
@@ -246,6 +243,7 @@
                         <i class="far fa-user"></i> User Profile
                       </h5>
                     </div>
+                    <!-- board main body -->
                     <div class="body-dash">
                       <div class="home board active">
                         <p class="current">
@@ -312,24 +310,10 @@
                             >
                               <span class="id">ID</span>
                               <span class="job-title">
-                                <b
-                                  >Job Title
-                                  <img
-                                    src="../assets/svg/updown-arrow.svg"
-                                    alt=""
-                                    class="img-updown"
-                                  />
-                                </b>
+                                <b>Job Title </b>
                               </span>
                               <span class="date">
-                                <b
-                                  >Date
-                                  <img
-                                    src="../assets/svg/updown-arrow.svg"
-                                    alt=""
-                                    class="img-updown"
-                                  />
-                                </b>
+                                <b>Date </b>
                               </span>
                               <span class="show"><b>Show</b></span>
                             </p>
@@ -597,6 +581,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- dashboard right end -->
               </div>
             </div>
           </div>
@@ -654,19 +639,23 @@
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <p class="mb-0">
-            © 2020 <a href="#">SAMFRPTOOL</a>, <br />All rights reserved.
+            © 2023 <a href="#">SAMFRPTOOL</a>, <br />All rights reserved.
           </p>
-          <img class="paypal" src="../assets/svg/dark-paypal.svg" alt="" />
+          <img class="paypal" src="./assets/svg/paypal.svg" alt="" />
         </div>
       </div>
     </div>
     <!--tfm-footer-->
     <script src="./../assets/js/jquery-3.6.0.min.js" defer></script>
     <script src="./../assets/js/bootstrap.min.js" defer></script>
+<<<<<<< HEAD
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="assets/js/dashboard.js"></script>
     <script src="./assets/js/logger.js"></script>
     <script src="/assets/js/app.js" type="text/javascript"></script>
+=======
+    <script src="assets/js/dashboard.js"></script>
+>>>>>>> refs/remotes/origin/main
   </body>
 </html>
