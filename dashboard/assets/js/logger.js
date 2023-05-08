@@ -21,7 +21,6 @@ async function readInfo(){
 }
 
 
-
 async function operationFinishedInfo(text,time,work_id){      
   const text__log = document.querySelector('.tools__info');
   const log=`<div class="mt-4">
