@@ -24,21 +24,12 @@ body {
   width: 500px !important;
 }
 
-/* hero section */
-.hero__wrapper {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
-    url('./../img/admin-cover.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 /* Nav Section */
 .hero-section nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 80px;
+  min-height: 70px;
   background-color: transparent;
   padding: 24px 0;
 }
@@ -467,7 +458,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #fff;
+  color: #222e35;
   letter-spacing: 0.1em;
   display: block;
   border: 1px solid transparent;
@@ -480,7 +471,7 @@ body {
 }
 
 .about-distributor-section .body .dashboard .left label svg path {
-  fill: #fff;
+  fill: #222e35;
 }
 
 .about-distributor-section
@@ -497,7 +488,7 @@ body {
 .about-distributor-section .body .dashboard .left label[for='home'] svg path {
   fill: transparent;
   stroke-width: 50px;
-  stroke: #fff;
+  stroke: #222e35;
 }
 
 .about-distributor-section
