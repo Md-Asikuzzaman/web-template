@@ -5,17 +5,11 @@ const textInfo={
   failed:'text-danger'
 };
 
-
 async function appendLog(text,info){
   const text__log=document.querySelector('.tools__info');
   var log = `<p class="mb-0 ${info}">${text}`;
-  if(text.includes("\n")) {
-    log += `</p>`;
-  }
   text__log.innerHTML += log;  
 }
-
-
 async function readInfo(){
   const d = new Date();
   let time = d.getTime();
@@ -25,6 +19,7 @@ async function readInfo(){
 
   await operationFinishedInfo('operation Finished',time,23423452)
 }
+
 
 
 async function operationFinishedInfo(text,time,work_id){      
