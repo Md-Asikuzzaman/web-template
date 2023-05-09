@@ -1,0 +1,25 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('./../img/hero-cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+}
+.form__wrapper {
+  flex-shrink: 0;
+  max-width: 630px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.form__title {
+  font-size: 30px;
+  color: #4c4c4c;
+  font-weight: 800;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset password</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/tfm/tfm-font2.css" />
+    <link rel="stylesheet" href="./assets/tfm/agent-info.css" />
+    <link rel="stylesheet" href="./assets/tfm/download.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/tfm/tfm-style.css" />
+    <link rel="stylesheet" href="./assets/tfm/forgot.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form__wrapper mx-auto">
+        <form>
+          <div class="modal-content pb-4 px-2">
+            <div class="modal-header d-block">
+              <h4 class="modal-title">Reset Password</h4>
+            </div>
+            <div class="modal-footer d-block">
+              <form>
+                <div class="form-group">
+                  <label for="password">Password *</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                  />
+                  <div class="eye">
+                    <i
+                      class="fa fa-eye"
+                      aria-hidden="true"
+                      id="passwordEye"
+                      onclick="passwordToggle()"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="form-group mt-3">
+                  <label for="confirmPassword">Confirm Password *</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmPassword"
+                    placeholder="Password"
+                  />
+                  <div class="eye">
+                    <i
+                      class="fa fa-eye"
+                      aria-hidden="true"
+                      id="confirmPasswordEye"
+                      onclick="confirmPasswordToggle()"
+                    ></i>
+                  </div>
+                </div>
+                <div class="sign-btn mt-3">
+                  <a href="" class="btn" id="messege">Sign up</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- script file -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+      // for sign in
+      var signInState = false;
+      function signInToggle() {
+        if (signInState) {
+          document
+            .getElementById('signInPassword')
+            .setAttribute('type', 'password');
+          document.getElementById('signInEye').style.color = '#7a797e';
+          signInState = false;
+        } else {
+          document
+            .getElementById('signInPassword')
+            .setAttribute('type', 'text');
+          document.getElementById('signInEye').style.color = '#5887ef';
+          signInState = true;
+        }
+      }
+
+      // password
+      var password = false;
+      function passwordToggle() {
+        if (password) {
+          document.getElementById('password').setAttribute('type', 'password');
+          document.getElementById('passwordEye').style.color = '#7a797e';
+          password = false;
+        } else {
+          document.getElementById('password').setAttribute('type', 'text');
+          document.getElementById('passwordEye').style.color = '#5887ef';
+          password = true;
+        }
+      }
+      // confirm password
+      var confirmPassword = false;
+      function confirmPasswordToggle() {
+        if (confirmPassword) {
+          document
+            .getElementById('confirmPassword')
+            .setAttribute('type', 'password');
+          document.getElementById('confirmPasswordEye').style.color = '#7a797e';
+          confirmPassword = false;
+        } else {
+          document
+            .getElementById('confirmPassword')
+            .setAttribute('type', 'text');
+          document.getElementById('confirmPasswordEye').style.color = '#5887ef';
+          confirmPassword = true;
+        }
+      }
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+<!-- Work process end -->
