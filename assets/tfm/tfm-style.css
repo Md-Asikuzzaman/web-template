@@ -234,10 +234,11 @@ p .last-texts {
 }
 
 #messege {
+
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #222e35;
+  background: #222e35; 
   border-radius: 4px;
   width: 100%;
   color: #ffff;
@@ -248,6 +249,7 @@ p .last-texts {
   font-family: revert;
   font-style: normal;
   align-items: center;
+  
 }
 
 .join-text {
