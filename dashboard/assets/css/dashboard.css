@@ -12,9 +12,11 @@ body {
   background-color: #e5e5e5;
   overflow-x: hidden;
 }
-a{
+
+a {
   text-decoration: none !important;
 }
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -441,55 +443,59 @@ a{
 }
 
 .about-distributor-section .body .dashboard .left {
-  background-color: #000000;
+  background-color: #222e35;
   display: table-cell;
   width: 20%;
+  height: 100vh;
 }
 
-.left ul{
-  margin:0;
-  padding-top:2rem;
+.left ul {
+  margin: 0;
+  padding-top: 2rem;
   position: relative;
 }
-.left ul li{
+
+.left ul li {
   list-style: none;
   position: relative;
   margin: 9px 0px;
-  
+
 }
-.left ul li a.active{
+
+.left ul li a.active {
   color: #1f1919 !important;
   text-decoration: none;
 }
 
-.left ul li::before{
-  content:'';
-  position: absolute;
-  width:15px;
-  height:15px;
-  top:-15px;
-  right:0px;
-  background-color: rgb(0, 0, 0);
-  border-bottom-right-radius:20px;
-  box-shadow: 6px 5px 0 5px;
-  color:#d1d7db;
-  transform: scale(0);
-  transform-origin:bottom right;
-  transition: 0.5s;
-}
-.left ul li.active::before{
-  right:0;
-  transform: scale(1);
-}
-
-.left ul li::after{
+.left ul li::before {
   content: '';
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 41.2px;
+  top: -15px;
   right: 0px;
-  background-color: rgb(1, 1, 1);
+  background-color: #222e35;
+  border-bottom-right-radius: 20px;
+  box-shadow: 6px 5px 0 5px;
+  color: #d1d7db;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: 0.5s;
+}
+
+.left ul li.active::before {
+  right: 0;
+  transform: scale(1);
+}
+
+.left ul li::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 42.2px;
+  right: 0px;
+  background-color: #222e35;
   border-top-right-radius: 20px;
   box-shadow: 6px -5px 0 5px;
   color: #d1d7db;
@@ -497,15 +503,18 @@ a{
   transform-origin: bottom right;
   transition: 0.5s;
 }
-.left ul li.active::after{
-  right:0;
+
+.left ul li.active::after {
+  right: 0;
   transform: scale(1);
 }
+
 .left ul li.active {
-  border-top-left-radius:20px;
-  border-bottom-left-radius:20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   background: #d1d7db;
 }
+
 .left ul li {
   color: #1f1919;
 
@@ -520,7 +529,7 @@ a{
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  white-space:nowrap;
+  white-space: nowrap;
   color: hwb(210 95% 4%);
   letter-spacing: 0.1em;
   display: block;
@@ -537,14 +546,7 @@ a{
   fill: #222e35;
 }
 
-.about-distributor-section
-  .body
-  .dashboard
-  .left
-  input:checked
-  + label
-  svg
-  path {
+.about-distributor-section .body .dashboard .left input:checked+label svg path {
   fill: #1f1919;
 }
 
@@ -554,14 +556,7 @@ a{
   stroke: hwb(210 95% 4%);
 }
 
-.about-distributor-section
-  .body
-  .dashboard
-  .left
-  input:checked
-  + label[for='home']
-  svg
-  path {
+.about-distributor-section .body .dashboard .left input:checked+label[for='home'] svg path {
   fill: transparent;
   stroke-width: 50px;
   stroke: #1f1919;
@@ -570,7 +565,8 @@ a{
 .about-distributor-section .body .dashboard .right {
   background-color: #d1d7db;
   display: table-cell;
-  height: auto;;
+  height: auto;
+  ;
 }
 
 .about-distributor-section .body .dashboard .right .content {
@@ -739,9 +735,11 @@ a{
   line-height: 25px;
   color: #6b7280;
 }
-.profile .form-control{
+
+.profile .form-control {
   background-color: #e7e7e7;
 }
+
 .about-distributor-section .body-dash .profile input::placeholder {
   font-family: Mulish;
   font-size: 18px;
@@ -960,6 +958,7 @@ a{
 .tools__box {
   min-height: 350px;
 }
+
 .tools__options {
   border: 2px solid #222e35;
   padding: 10px;
@@ -983,6 +982,7 @@ a{
   color: #d1d7db;
   border-radius: 3px;
 }
+
 @media screen and (max-width: 767px) {
   .last-line .paypal {
     max-width: 140px;
@@ -1027,4 +1027,25 @@ a{
     padding: 114px 0px 30px;
   }
 }
+
 /* TFM Footer */
+
+
+
+/* content and logbox stylesheet */
+
+.logbox-widget {
+  background-color: #b9c2c8;
+  box-shadow: #b9c2c8 0px 3px 8px;
+  border-radius: 10px;
+  height: 100vh;
+}
+
+.content-widget {
+  background: #b9c2c8;
+  box-shadow: #b9c2c8 0px 3px 8px;
+  border-radius: 10px;
+  height: 100vh;
+}
+
+/* ended content stylehseet */
