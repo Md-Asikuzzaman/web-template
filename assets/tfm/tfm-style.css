@@ -237,7 +237,7 @@ p .last-texts {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: linear-gradient(180deg, #681e8d 0%, #6402a7 100%);
+  background: #222e35;
   border-radius: 4px;
   width: 100%;
   color: #ffff;
