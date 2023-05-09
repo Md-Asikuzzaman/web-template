@@ -15,7 +15,7 @@ async function appendLog(text,info){
 }
 
 async function readInfo(){
-  const d = new Date();¥
+  const d = new Date();
   let time = d.getTime();
 
   await appendLog("Sending Request to Server...",textInfo.default);
