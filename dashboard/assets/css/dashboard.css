@@ -12,7 +12,9 @@ body {
   background-color: #e5e5e5;
   overflow-x: hidden;
 }
-
+a{
+  text-decoration: none !important;
+}
 .container {
   max-width: 1200px;
   width: 100%;
@@ -164,7 +166,7 @@ body {
 }
 
 .hero-section .nav-login a.login {
-  color: #fff;
+  color: #d1d7db;
   width: 94px;
   padding: 12px;
   font-size: 18px;
@@ -439,30 +441,91 @@ body {
 }
 
 .about-distributor-section .body .dashboard .left {
-  background-color: #b9c2c8;
+  background-color: #000000;
   display: table-cell;
-  width: 30%;
+  width: 20%;
 }
 
-.about-distributor-section .body .dashboard .left input:checked + label {
-  background: #222e35;
-  color: #fff;
+.left ul{
+  margin:0;
+  padding-top:2rem;
+  position: relative;
+}
+.left ul li{
+  list-style: none;
+  position: relative;
+  margin: 9px 0px;
+  
+}
+.left ul li a.active{
+  color: #1f1919 !important;
+  text-decoration: none;
+}
+
+.left ul li::before{
+  content:'';
+  position: absolute;
+  width:15px;
+  height:15px;
+  top:-15px;
+  right:0px;
+  background-color: rgb(0, 0, 0);
+  border-bottom-right-radius:20px;
+  box-shadow: 6px 5px 0 5px;
+  color:#d1d7db;
+  transform: scale(0);
+  transform-origin:bottom right;
+  transition: 0.5s;
+}
+.left ul li.active::before{
+  right:0;
+  transform: scale(1);
+}
+
+.left ul li::after{
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 41.2px;
+  right: 0px;
+  background-color: rgb(1, 1, 1);
+  border-top-right-radius: 20px;
+  box-shadow: 6px -5px 0 5px;
+  color: #d1d7db;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: 0.5s;
+}
+.left ul li.active::after{
+  right:0;
+  transform: scale(1);
+}
+.left ul li.active {
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px;
+  background: #d1d7db;
+}
+.left ul li {
+  color: #1f1919;
+
 }
 
 .about-distributor-section .body .dashboard .left input {
   display: none;
 }
 
-.about-distributor-section .body .dashboard .left label {
+.about-distributor-section .body .dashboard .left li a {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #222e35;
+  white-space:nowrap;
+  color: hwb(210 95% 4%);
   letter-spacing: 0.1em;
   display: block;
-  border: 1px solid transparent;
-  padding: 10px 15px;
+  border: 2px solid transparent;
+  padding: 9px 15px;
   cursor: pointer;
 }
 
@@ -482,13 +545,13 @@ body {
   + label
   svg
   path {
-  fill: #fff;
+  fill: #1f1919;
 }
 
 .about-distributor-section .body .dashboard .left label[for='home'] svg path {
   fill: transparent;
   stroke-width: 50px;
-  stroke: #222e35;
+  stroke: hwb(210 95% 4%);
 }
 
 .about-distributor-section
@@ -501,12 +564,13 @@ body {
   path {
   fill: transparent;
   stroke-width: 50px;
-  stroke: #fff;
+  stroke: #1f1919;
 }
 
 .about-distributor-section .body .dashboard .right {
-  background-color: #ffffff;
+  background-color: #d1d7db;
   display: table-cell;
+  height: auto;;
 }
 
 .about-distributor-section .body .dashboard .right .content {
@@ -584,7 +648,7 @@ body {
 }
 
 .about-distributor-section .body-dash .job .search .search-bar {
-  background: #ffffff;
+  background: #d1d7db;
   box-shadow: 0px 1.38477px 4.1543px rgba(0, 0, 0, 0.1),
     0px 1.38477px 2.76953px rgba(0, 0, 0, 0.06);
   border-radius: 2.76953px;
@@ -607,6 +671,7 @@ body {
   border: none;
   outline: none;
   color: #4b5563;
+  background-color: #b9c2c8;
 }
 
 .about-distributor-section .body-dash .job .search nav li a:active,
@@ -617,13 +682,13 @@ body {
 }
 
 .about-distributor-section .body-dash .job .search nav li a.active {
-  color: #fff;
+  color: #d1d7db;
   background: #222e35;
   border-radius: 3px;
 }
 
 .about-distributor-section .body-dash .job .display .title p {
-  background-color: #e5e7eb;
+  background-color: #b9c2c8;
   padding: 6px;
   border-radius: 4px;
 }
@@ -647,7 +712,7 @@ body {
   line-height: 16px;
   color: #6b7280;
   padding: 6px 12px;
-  background: #ffffff;
+  background: #d1d7db;
   border: 0.692383px solid #7c3aed;
   border-radius: 4px;
 }
@@ -674,7 +739,9 @@ body {
   line-height: 25px;
   color: #6b7280;
 }
-
+.profile .form-control{
+  background-color: #e7e7e7;
+}
 .about-distributor-section .body-dash .profile input::placeholder {
   font-family: Mulish;
   font-size: 18px;
@@ -684,7 +751,7 @@ body {
 .about-distributor-section .body-dash .profile .confirm-button button {
   width: 100%;
   background-color: #222e35;
-  color: #fff;
+  color: #d1d7db;
 }
 
 @media screen and (max-width: 1023px) {
@@ -901,7 +968,7 @@ body {
 
 .tools__options span {
   position: absolute;
-  background-color: #fff;
+  background-color: #b9c2c8;
   top: -20px;
   left: 5px;
   padding: 5px;
@@ -913,10 +980,9 @@ body {
   border: none;
   margin-top: 10px;
   background-color: #222e35;
-  color: #fff;
+  color: #d1d7db;
   border-radius: 3px;
 }
-
 @media screen and (max-width: 767px) {
   .last-line .paypal {
     max-width: 140px;
