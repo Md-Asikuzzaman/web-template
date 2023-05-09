@@ -10,6 +10,7 @@ body {
   justify-content: center;
   font-family: Inter;
 }
+
 .form__wrapper {
   flex-shrink: 0;
   max-width: 630px;
@@ -17,9 +18,4 @@ body {
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
-}
-.form__title {
-  font-size: 30px;
-  color: #4c4c4c;
-  font-weight: 800;
 }
